@@ -30,7 +30,7 @@ const loadQuotes = async()=>{
 
 const response = await fetch(
 
-"http://localhost:8000/quotes"
+"process.env.NEXT_PUBLIC_API_URL/quotes"
 
 );
 
@@ -285,7 +285,7 @@ value:string
 
 await fetch(
 
-`http://localhost:8000/quote/${id}`,
+`process.env.NEXT_PUBLIC_API_URL/quote/${id}`,
 
 {
 
@@ -329,7 +329,7 @@ const convertCustomer = async(id:number)=>{
 
 await fetch(
 
-`http://localhost:8000/convert/${id}`,
+`process.env.NEXT_PUBLIC_API_URL/convert/${id}`,
 
 {
 

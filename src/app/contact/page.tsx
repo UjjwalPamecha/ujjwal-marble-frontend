@@ -146,7 +146,7 @@ try{
 
 const response = await fetch(
 
-"http://localhost:8000/quote",
+"process.env.NEXT_PUBLIC_API_URL/quote",
 
 {
 
@@ -440,7 +440,6 @@ rounded
 "
 
 />
-
 <input
   placeholder="Phone Number"
   onChange={(e)=>
