@@ -146,7 +146,7 @@ try{
 
 const response = await fetch(
 
-"process.env.NEXT_PUBLIC_API_URL/quote",
+"${process.env.NEXT_PUBLIC_API_URL}/quote",
 
 {
 

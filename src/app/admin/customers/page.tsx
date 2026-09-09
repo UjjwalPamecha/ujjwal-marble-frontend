@@ -22,7 +22,7 @@ const loadCustomers = async()=>{
 
 const response = await fetch(
 
-"process.env.NEXT_PUBLIC_API_URL/customers"
+"${process.env.NEXT_PUBLIC_API_URL}/customers"
 
 );
 
